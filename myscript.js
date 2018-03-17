@@ -115,3 +115,83 @@ console.log(favfood.length);
 console.log(favfood[2]); 
 favfood[1] = 'chiku';
 favfood.push('roti');
+
+//Loops
+
+//While loop
+// starting point
+var number = 0;
+while (number < 10) {
+    // 'less than 10'' is a condition (finishing point)
+    console.log('JavaScript is awesome!');
+    number = number + 1;
+    // + 1 is a counter/size of the step
+}
+
+//For loop
+var i;
+for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
+    console.log('Purr');
+}
+
+//Iterating Through Arrays
+var animals = ['cats', 'dogs', 'horses'];
+for(var i = 0; i < animals.length; i++){
+    console.log('I love ' + animals[i]);
+}
+
+//Loops and Logic
+for (var i = 10; i >= 0; i = i - 1) {
+    if (i === 5) { // triple equals compares types as well!!
+        console.log('WooHoo, we are in the middle!');
+    } else {
+        console.log(i);
+    }
+}
+
+//tasks
+var number = 10;
+while (number >= 1) {
+    // 'less than 10'' is a condition (finishing point)
+    console.log(number);
+    number = number - 1;
+    // + 1 is a counter/size of the step
+}
+
+
+for (var i = 3; i <= 22; i = i + 3) {  // (starting point; condition; step)
+    console.log('Printing every 3rd number ' + i);
+}
+
+for (var i = 0; i <= favfood.length; i = i + 1) {  // (starting point; condition; step)
+    console.log('I like ' + favfood[i]);
+}
+
+//exercise
+/*
+Count from 1 to 50 and print the numbers out:
+
+If a number is a multiple of three, print ‘Fizz’.
+If it’s a multiple of 5, print ‘Buzz’.
+If it’s a multiple of 3 and 5, print ‘FizzBuzz’.
+For everything else, print the number itself.
+
+*/
+for(var i = 1; i<=50;i++)
+{
+    if(i%3 == 0 && i%5 == 0)
+    {
+        console.log('FIZZBUZZ');
+    }
+    else if (i%3 == 0)
+    {
+        console.log('FIZZ');
+    }
+    else if (i%5 == 0){
+        console.log('BUZZ');
+    }
+    else{
+        console.log(i);
+    }
+}
+

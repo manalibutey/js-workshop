@@ -195,3 +195,9 @@ for(var i = 1; i<=50;i++)
     }
 }
 
+//DOCUMENT OBJECT MODEL (DOM)
+
+var ourTwitter = document.querySelector('.fa-twitter');
+console.log(ourTwitter);
+// We can store page elements in variables, just like any other value!
+// The result on the console is : <i class="fa fa-twitter" aria-hidden="true"></i>
